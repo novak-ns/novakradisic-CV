@@ -1,0 +1,80 @@
+@import '_config';
+@import '_home';
+@import '_menu';
+@import '_about';
+@import '_skills';
+@import '_contact';
+@import '_projects';
+@import '_responsive';
+
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background-color: $primary-color;
+    color: set-text-color($primary-color);
+    
+}
+
+h1, h2, {
+    font-weight: 400;
+}
+
+a {
+    color: set-text-color($primary-color);
+    text-decoration: none;
+    padding-left: 8px;
+    padding-right: 8px;
+    @include transition-ease
+    &:hover {
+        color: $secondary-color;
+    }
+}
+
+.title {
+    color: $secondary-color;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 24px;
+    padding-top: 65px;
+}
+
+hr {
+    height: 5px;
+    border: 0;
+    background-color: white;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@include media-850 {
+    .title {
+        font-size: 20px;
+        padding-top: 10px;
+        margin-bottom: 30px;
+    }
+    hr {
+        height: 2px;
+    }
+}
+
+@include media-555 {
+    .title {
+        font-size: 16px;
+        padding-top: 10px;
+        margin-bottom: 20px;
+    }
+    hr {
+        height: 1px;
+    }
+}
+
+

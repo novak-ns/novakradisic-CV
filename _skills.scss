@@ -1,0 +1,40 @@
+.skills {
+    &_content {
+        display: flex;
+        max-width: 900px;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        .responsive_image {
+            width: 350px;
+           height: 300px;
+           margin-top: 200px;
+           filter: invert(47%) sepia(98%) saturate(1762%) hue-rotate(339deg) brightness(101%) contrast(106%);        }
+    
+    &_languages {
+        padding-right: 15px;
+        text-align: center;
+        img {
+            width: 110px;
+        }
+    }
+    &_tools {
+        padding-left: 15px;
+        text-align: center;
+        img {
+            width: 110px;
+        }
+    }
+
+    h2 {
+        margin-top: 36px;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        margin-top: 5px;
+        margin-bottom: 46px;
+    }
+}
+}
